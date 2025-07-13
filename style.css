@@ -69,7 +69,9 @@ header .btn {
     color: #fff;
     font-size: 14px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Buttons */
 .btn {
     background-color: #7f5af0;
