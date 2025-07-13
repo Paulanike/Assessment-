@@ -1,0 +1,399 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #0f0e17 0%, #1c1b2a 100%);
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 15px;
+    font-size: 14px;
+    color: #a7a9be;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+header .btn {
+    background-color: #7f5af0;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #7f5af0;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #6244c5;
+}
+
+.btn.outline {
+    background: none;
+    border: 1px solid #7f5af0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero .subtitle {
+    color: #00f5c8;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #fff, #7f5af0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: #a7a9be;
+}
+
+.hero-actions button {
+    margin: 0 10px;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: #16161a;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.card p {
+    color: #a7a9be;
+}
+
+/* Clients Section */
+.clients {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.clients .logos span {
+    margin: 0 20px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* How We Work Section */
+.how-we-work {
+    padding: 80px 20px;
+    align-items: center;
+}
+
+.work-img {
+    background: #232334;
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.how-we-work h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.how-we-work p {
+    max-width: 500px;
+    color: #a7a9be;
+}
+
+/* Our Team Section */
+.our-team {
+    padding: 80px 20px;
+    align-items: center;
+}
+
+.team-img {
+    background: #232334;
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.our-team h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.our-team p {
+    max-width: 500px;
+    margin-bottom: 20px;
+    color: #a7a9be;
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background-color: #16161a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-card .project-img {
+    background: #232334;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-card h4 {
+    margin-bottom: 10px;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 80px 20px;
+    background: #1c1b2a;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.price-card {
+    background-color: #16161a;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.price-card h3 {
+    margin-bottom: 10px;
+}
+
+.price-card .price {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #7f5af0;
+}
+
+.price-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+    color: #a7a9be;
+}
+
+.price-card ul li {
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 20px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    background-color: #16161a;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, border 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #7f5af0;
+}
+
+.testimonial-card .avatar {
+    width: 80px;
+    height: 80px;
+    background: #232334;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.testimonial-card .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial-card .role {
+    font-size: 14px;
+    color: #a7a9be;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h3 {
+    margin-bottom: 20px;
+}
+
+.contact button {
+    margin: 0 10px;
+}
+
+/* Footer Section */
+footer {
+    padding: 60px 20px;
+    background: #16161a;
+}
+
+footer .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer .footer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #a7a9be;
+}
+
+footer .copyright {
+    font-size: 12px;
+    color: #a7a9be;
+}
+
+footer .flex > div {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .price-card, .testimonial-card, .project-card {
+        width: 80% !important;
+    }
+
+    .work-img, .team-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    header nav {
+        display: none;
+    }
+}
